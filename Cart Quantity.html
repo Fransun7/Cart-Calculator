@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CartQuantity</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        button {
+            border-radius: 5px;
+            border: none;
+            height: 30px;
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn1 {
+            width: 120px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn2 {
+            background-color: green;
+            width: 100px;
+            height: 50px;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn3 {
+            width: 80px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        .btn4 {
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: orangered;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Cart Calculator</h1>
+
+    <button class="btn1"
+      onclick="
+            console.log(`cartQuantity: ${cartQuantity}`); 
+            "
+    >
+      Show Quantitly
+    </button>
+
+    <button class="btn2"
+      onclick="
+            cartQuantity = cartQuantity + 1;
+            console.log(`cartQuantity: ${cartQuantity}`); 
+            "
+    >
+      Add to cart
+    </button>
+
+    <button class="btn3"
+      onclick="
+            cartQuantity = cartQuantity + 2;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+    >
+      +2
+    </button>
+
+    <button class="btn3"
+      onclick="
+            cartQuantity = cartQuantity + 3;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+    >
+      +3
+    </button>
+
+    <button class="btn3"
+      onclick="
+        cartQuantity = cartQuantity + 4;
+        console.log(`cartQuantity: ${cartQuantity}`);
+        "
+    >
+      +4
+    </button>
+
+    <button class="btn3"
+      onclick="
+        cartQuantity = cartQuantity + 5;
+        console.log(`cartQuantity: ${cartQuantity}`);
+        "
+    >
+      +5
+    </button>
+
+    <button class="btn4"
+      onclick="
+            cartQuantity = 0;
+            console.log('cart was reset.')
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+    >
+      Reset CartQuantity
+    </button>
+
+    <button class="btn3"
+      onclick="
+        cartQuantity = cartQuantity -1;
+        console.log(`cartQuantity: ${cartQuantity}`);
+        "
+   >
+Remove
+
+
+      <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity - 2;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        -2
+      </button>
+
+      <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity - 3;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        -3
+      </button>
+
+      <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity % 1;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        / 1
+      </button>
+
+      <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity % 2;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        / 2
+      </button>
+
+      <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity % 3;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        / 3
+
+        <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity % 4;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        / 4
+      </button>
+
+      <button class="btn3"
+        onclick="
+            cartQuantity = cartQuantity % 5;
+            console.log(`cartQuantity: ${cartQuantity}`);
+            "
+      >
+        / 5
+    </button>
+  </body>
+  <script>
+    let cartQuantity = 0;
+  </script>
+</html>
